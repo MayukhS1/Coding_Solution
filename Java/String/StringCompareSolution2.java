@@ -1,6 +1,8 @@
+package String;
+
 import java.util.Scanner;
 
-public class Solution {
+public class StringCompareSolution2 {
 
     public static String getSmallestAndLargest(String s, int k) {
         
