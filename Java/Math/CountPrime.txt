@@ -1,0 +1,11 @@
+q1. Count Primes
+Write a program to count the number of prime numbers formed by removing digits from that
+number from the back. (Including the number itself) Take input from STDIN and display output
+to STDOUT without any additional text.
+Example:
+Input:
+135
+Output:
+1
+Explanation: 135 is not prime, 13 (by removing 5 from last) is prime, but 1 is not prime
+

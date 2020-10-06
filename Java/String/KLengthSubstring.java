@@ -20,14 +20,17 @@ public class KLengthSubstring {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         KLengthSubstring kls = new KLengthSubstring();
+        try {
+            String str = sc.nextLine();
+            int k = sc.nextInt();
 
-        String str = sc.nextLine();
-        int k = sc.nextInt();
-
-        for (int i = 0; i < str.length()-k+1; i++) {
-            String str1 = str.substring(i, i + k);
-            if(kls.isPalindrome(str1))
-                System.out.println(str1);
+            for (int i = 0; i < str.length() - k + 1; i++) {
+                String str1 = str.substring(i, i + k);
+                if (kls.isPalindrome(str1))
+                    System.out.println(str1);
+            }
+        }catch (Exception e){
+            System.out.println("ERROR");
         }
 
     }
