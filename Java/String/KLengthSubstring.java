@@ -1,6 +1,8 @@
 package String;
 
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 /*
@@ -13,24 +15,35 @@ import java.util.Scanner;
 * Output: aca
  * */
 public class KLengthSubstring {
-    boolean isPalindrome(String str){
+    private static boolean isPalindrome(String str){
         StringBuilder sb = new StringBuilder(str);
         return str.equals(new String(sb.reverse()));
     }
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        KLengthSubstring kls = new KLengthSubstring();
+    public List<String> kLengthPalindrome(String str, int k) {
+        List<String> palindromeList = new ArrayList<>();
         try {
-            String str = sc.nextLine();
-            int k = sc.nextInt();
-
             for (int i = 0; i < str.length() - k + 1; i++) {
                 String str1 = str.substring(i, i + k);
-                if (kls.isPalindrome(str1))
-                    System.out.println(str1);
+                if (isPalindrome(str1)){
+                    palindromeList.add(str1);
+                }
             }
         }catch (Exception e){
-            System.out.println("ERROR");
+            palindromeList.clear();
+            palindromeList.add("error");
+        }
+        return palindromeList;
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        int k = sc.nextInt();
+
+        KLengthSubstring kls = new KLengthSubstring();
+        List<String> ans = kls.kLengthPalindrome(str,k);
+        for (String elm:
+             ans) {
+            System.out.println(elm);
         }
 
     }
