@@ -1,0 +1,65 @@
+1. Program to remove the vowels from String.
+
+2. GCD of two numbers.
+
+3. GCD of array elements.
+
+4. Unique elements in array.
+
+5. Implement bubble sort.
+
+6. Calculate the frequency of given character in a string.
+
+7. Mirror image of a matrix.
+
+8. Transpose of matrix.
+
+9. To delete a specified a letter from a given word.
+
+10. Two arrays given and combine them and sorting order.
+
+Patterns print:
+
+1. Write a program to print as following :
+input = 5
+5
+54
+543
+5432
+54321
+
+2. Write a program to print as following :
+input = 5
+12222
+23333
+34444
+45555
+56666
+
+3. Write a program to print as following :
+
+**************
+**************
+**************
+**************
+**************
+
+I/p : m,n
+
+where m is number of rows, n is number of columns.
+
+4. Write a program to print as following :
+input = 5
+*********
+*******
+*****
+***
+*
+
+5. Write a program to print as following :
+input = 4
+
+1*2*3*4
+9*10*11*12
+13*14*15*16
+5*6*7*8
